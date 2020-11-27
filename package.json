@@ -1,42 +1,42 @@
 {
-	"name": "@cdab/eslint-config-cdab",
-	"version": "1.0.0",
-	"description": "A shareable ESlint configuration",
-	"main": "index.js",
-	"peerDependencies": {
-		"eslint": "^7.14.0"
-	},
-	"devDependencies": {
-		"safe-publish-latest": "^1.1.4",
-		"eclint": "^2.8.1",
-		"eslint": "^7.14.0",
-		"eslint-find-rules": "^3.6.1",
-		"in-publish": "^2.0.1"
-	},
-	"scripts": {
-		"aud": "^1.1.3",
-		"find-unused": "eslint-find-rules --unused",
-		"prepublish": "! type safe-publish-latest >/dev/null 2>&1 || safe-publish-latest && in-install || (npm test && npm run find-unused)",
-		"pretest": "eclint check *",
-		"test": "npm run --silent tests-only",
-		"posttest": "npx aud --production",
-		"tests-only": "eslint index.js && node ."
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/CongenialData/eslint-config-cdab.git"
-	},
-	"keywords": [
-		"eslint",
-		"eslintconfig"
-	],
-	"author": "Congenial Data AB",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/CongenialData/eslint-config-cdab/issues"
-	},
-	"homepage": "https://github.com/CongenialData/eslint-config-cdab#readme",
-	"publishConfig": {
-		"access": "public"
-	}
+  "name": "@cdab/eslint-config-cdab",
+  "version": "1.0.0",
+  "description": "A shareable ESlint configuration",
+  "main": "index.js",
+  "peerDependencies": {
+    "eslint": "^7.14.0"
+  },
+  "devDependencies": {
+    "safe-publish-latest": "^1.1.4",
+    "eclint": "^2.8.1",
+    "eslint": "^7.14.0",
+    "eslint-find-rules": "^3.6.1",
+    "in-publish": "^2.0.1"
+  },
+  "scripts": {
+    "aud": "^1.1.3",
+    "find-unused": "eslint-find-rules --unused",
+    "prepublish": "! type safe-publish-latest >/dev/null 2>&1 || safe-publish-latest && in-install || (npm test && npm run find-unused)",
+    "pretest": "eclint check *",
+    "test": "npm run --silent tests-only",
+    "posttest": "npx aud --production",
+    "tests-only": "eslint index.js && node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CongenialData/eslint-config-cdab.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "author": "Congenial Data AB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CongenialData/eslint-config-cdab/issues"
+  },
+  "homepage": "https://github.com/CongenialData/eslint-config-cdab#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 }

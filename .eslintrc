@@ -2,7 +2,7 @@
 	"root": true,
 
 	"globals": {
-        "BigInt": false,
+		"BigInt": false,
 		"Symbol": false,
 		"Map": false,
 		"Set": false,
@@ -10,8 +10,8 @@
 	},
 
 	"env": {
-		"es6": false,
-		"browser": false,
+		"es6": true,
+		"browser": true,
 		"node": true,
 		"amd": false,
 		"mocha": false,
@@ -99,44 +99,7 @@
 		"id-length": [2, { "min": 1, "max": 20, "properties": "never" }],
 		"id-match": [0],
 		"implicit-arrow-linebreak": [2, "beside"],
-		"indent": [2, "tab", {
-			"SwitchCase": 1,
-			"VariableDeclarator": 1,
-			"outerIIFEBody": 1,
-			"FunctionDeclaration": {
-				"parameters": 1,
-				"body": 1
-			},
-			"FunctionExpression": {
-				"parameters": 1,
-				"body": 1
-			},
-			"CallExpression": {
-				"arguments": 1
-			},
-			"ArrayExpression": 1,
-			"ObjectExpression": 1,
-			"ImportDeclaration": 1,
-			"flatTernaryExpressions": false,
-			"ignoredNodes": [
-				"JSXElement",
-				"JSXElement > *",
-				"JSXAttribute",
-				"JSXIdentifier",
-				"JSXNamespacedName",
-				"JSXMemberExpression",
-				"JSXSpreadAttribute",
-				"JSXExpressionContainer",
-				"JSXOpeningElement",
-				"JSXClosingElement",
-				"JSXText",
-				"JSXEmptyExpression",
-				"JSXSpreadChild",
-				"JSXFragment",
-				"JSXOpeningFragment",
-				"JSXClosingFragment"
-			]
-		}],
+		"indent": ["error", 2],
 		"init-declarations": [0, "always"],
 		"jsx-quotes": [2, "prefer-double"],
 		"key-spacing": [2, {
@@ -217,7 +180,7 @@
 		"no-catch-shadow": [2],
 		"no-class-assign": [2],
 		"no-cond-assign": [2],
-		"no-console": [2],
+		"no-console": "warn",
 		"no-const-assign": [2],
 		"no-constant-condition": [2],
 		"no-constructor-return": [2],
@@ -253,7 +216,7 @@
 			"enforceForSequenceExpressions": true,
 			"enforceForNewInMemberExpressions": false
 		}],
-		"no-extra-semi": [2],
+    "no-extra-semi": "error",
 		"no-fallthrough": [2],
 		"no-floating-decimal": [2],
 		"no-func-assign": [2],
@@ -467,9 +430,9 @@
 		"require-unicode-regexp": [0],
 		"require-yield": [2],
 		"rest-spread-spacing": [2, "never"],
-		"semi": [2],
-		"semi-spacing": [2, { "before": false, "after": true }],
-		"semi-style": [2, "last"],
+		"semi": "off",
+		"semi-spacing": "off",
+		"semi-style": "off",
 		"sort-imports": [0],
 		"sort-keys": [2, "asc", { "caseSensitive": false, "natural": true }],
 		"sort-vars": [0],
