@@ -4,12 +4,12 @@
   "description": "A shareable ESlint configuration",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "^7.14.0"
+    "eslint": "^8.1.0"
   },
   "devDependencies": {
     "safe-publish-latest": "^1.1.4",
     "eclint": "^2.8.1",
-    "eslint": "^7.14.0",
+    "eslint": "^8.1.0",
     "eslint-find-rules": "^3.6.1",
     "in-publish": "^2.0.1"
   },
